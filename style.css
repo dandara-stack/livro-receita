@@ -1,0 +1,94 @@
+body {
+  background-image: url(Gemini_Generated_Image_ubq2rzubq2rzubq2.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+}
+h1 {
+  font-family: "Playfair Display", serif;
+  color: #fffefe;
+  font-weight: 700;
+  font-size: 2.5em;
+  text-align: center;
+}
+h2 {
+  font-family: "Playfair Display", serif;
+  color: #fffefe;
+  font-weight: 400;
+  font-size: 1.8em;
+  margin-top: 20px;
+}
+
+form {
+  background-color: rgba(87, 52, 12, 0.521);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  color: #fffefe;
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  background-color: rgba(87, 52, 12, 0.555);
+  border-radius: 4px;
+}
+
+button {
+  background-color: rgb(87, 52, 12);
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: rgb(43, 25, 6);
+}
+a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+#pesquisa {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.receita {
+  background-color: white;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.receita h3 {
+  margin-top: 0;
+}

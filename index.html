@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <title>02-100</title>
+</head>
+
+<body>
+
+  <main>
+
+    <form id="form-receita">
+      <h1>Meu Livro De Receitas</h1>
+      <section id="adicionar-receita">
+        <h2>Adicionar Nova Receita</h2>
+        <label for="titulo"><strong> Título:</strong></label>
+        <input type="text" id="titulo" required>
+
+        <label for="ingredientes"><strong>Ingredientes (um por linha):</strong></label>
+        <textarea id="ingredientes" required></textarea>
+
+        <label for="modo-preparo"><strong>Modo de Preparo:</strong></label>
+        <textarea id="modo-preparo" required></textarea>
+
+        <button type="submit">Salvar Receitas</button>
+      </section>
+      <a href="minhasreceitas.html">Minhas Receitas</a>
+    </form>
+
+
+  </main>
+
+  <script src="script.js"></script>
+
+
+</body>
+
+</html>
