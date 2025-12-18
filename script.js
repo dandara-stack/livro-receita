@@ -41,9 +41,25 @@ document.addEventListener("DOMContentLoaded", () => {
         .filter((i) => i.trim());
       const modoPreparo = document.getElementById("modo-preparo").value;
 
+      // Validação dos campos
+      if (!titulo || ingredientes.length === 0 || !modoPreparo) {
+        alert("Por favor, preencha todos os campos corretamente!");
+        return;
+      }
+
+      // Adicionar nova receita
       receitas.push({ titulo, ingredientes, modoPreparo });
+
+      // Salvar no localStorage
       localStorage.setItem("receitas", JSON.stringify(receitas));
+
+      // ⭐⭐ ALERTA DE CONFIRMAÇÃO ⭐⭐
+      alert("⭐⭐ Receita cadastrada com sucesso!⭐⭐");
+
+      // Atualizar a exibição
       exibirReceitas();
+
+      // Limpar o formulário
       form.reset();
     });
   }
@@ -57,9 +73,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Remover receita
   window.removerReceita = (index) => {
-    receitas.splice(index, 1);
-    localStorage.setItem("receitas", JSON.stringify(receitas));
-    exibirReceitas();
+    if (confirm("Tem certeza que deseja remover esta receita?")) {
+      receitas.splice(index, 1);
+      localStorage.setItem("receitas", JSON.stringify(receitas));
+      exibirReceitas();
+      alert("Receita removida com sucesso!");
+    }
   };
 
   // Exibir inicial

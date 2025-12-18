@@ -5,6 +5,7 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 20px;
+  min-height: 100vh;
 }
 header {
   text-align: center;
@@ -46,12 +47,14 @@ label {
 
 input,
 textarea {
+  color: #fffefe;
   width: 100%;
-  padding: 8px;
+  padding: 2px;
   margin-top: 5px;
   border: 1px solid #ccc;
   background-color: rgba(87, 52, 12, 0.555);
   border-radius: 4px;
+  font-size: medium;
 }
 
 button {
@@ -76,17 +79,31 @@ a {
 }
 
 #pesquisa {
+  color: #fffefe;
   width: 100%;
   padding: 10px;
   margin-bottom: 20px;
 }
 
 .receita {
-  background-color: white;
-  padding: 15px;
-  margin-bottom: 10px;
+  background-color: rgba(87, 52, 12, 0.521);
+  padding: 20px;
   border-radius: 8px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  color: #fffefe;
+  margin-bottom: 20px;
+}
+footer {
+  background-color: rgba(87, 52, 12, 0.521);
+  text-align: center;
+  color:  rgb(250, 249, 249);
+  font-weight: bolder;
+  font-size: 0.9em;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px 0; 
 }
 
 .receita h3 {
